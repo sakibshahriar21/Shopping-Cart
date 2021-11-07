@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Shopping Cart</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Javascript Shopping Cart</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cart
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div id="sopping-list">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Title</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                            <hr>
+                            <p class="lead"><span id="total" class="mx-auto badge badge-danger"></span></p>
+                            <a href="#" class="btn btn-primary btn-block" id="clear">Empty</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron mt-4 mb-4">
+            <h1 class="display-3">Javascript Shopping Cart</h1>
+            <p class="lead">Latest Products</p>
+            <hr class="my-2">
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Read more</a>
+            </p>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="card mb-3 p-3 bg-white">
+                    <img class="mb-2" style="height: 200px; width: 100%; display: block;" src="Images/Neo.jpeg" alt="Card image">
+                    <hr class="my-2">
+                    <h3 class="card-subtitle mb-3 mt-2 text-muted">Amazfit Neo</h3>
+                    <hr class="my-2">
+                    <p class="card-text">Most affordable retro smartwatch by Amazfit</p>
+                    <p id="price" class="text-center bg-danger text-white p-1">2499 ৳</p> 
+                    <a href="#" class="btn btn-primary btn-block" id="add-to-list" data-id="1">Add to cart</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 p-3 bg-white">
+                    <img class="mb-2" style="height: 200px; width: 100%; display: block;" src="images/Band_5.jpg" alt="Card image">
+                    <hr class="my-2">
+                    <h3 class="card-subtitle mb-3 mt-2 text-muted">Amazfit Band 5</h3>
+                    <hr class="my-2">
+                    <p class="card-text">Most affordable fitness tracker band by Amazfit</p>
+                    <p id="price" class="text-center bg-danger text-white p-1">2599 ৳</p> 
+                    <a href="#" class="btn btn-primary btn-block" id="add-to-list" data-id="2">Add to cart</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 p-3 bg-white">
+                    <img class="mb-2" style="height: 200px; width: 100%; display: block;" src="images/Bip_S.jpg" alt="Card image">
+                    <hr class="my-2">
+                    <h3 class="card-subtitle mb-3 mt-2 text-muted">Amazfit Bip S</h3>
+                    <hr class="my-2">
+                    <p class="card-text">Most affordable smartwatch with built in GPS by Amazfit</p>
+                    <p id="price" class="text-center bg-danger text-white p-1">4499 ৳</p> 
+                    <a href="#" class="btn btn-primary btn-block" id="add-to-list" data-id="3">Add to cart</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 p-3 bg-white">
+                    <img class="mb-2" style="height: 200px; width: 100%; display: block;" src="images/Bip_u_Pro.jpg" alt="Card image">
+                    <hr class="my-2">
+                    <h3 class="card-subtitle mb-3 mt-2 text-muted">Amazfit Bip U</h3>
+                    <hr class="my-2">
+                    <p class="card-text">Most affordable smartwatch with large LED display</p>
+                    <p id="price" class="text-center bg-danger text-white p-1">4799 ৳</p> 
+                    <a href="#" class="btn btn-primary btn-block" id="add-to-list" data-id="4">Add to cart</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 p-3 bg-white">
+                    <img class="mb-2" style="height: 200px; width: 100%; display: block;" src="images/Gts_2_mini.jpg" alt="Card image">
+                    <hr class="my-2">
+                    <h3 class="card-subtitle mb-3 mt-2 text-muted">Amazfit GTS 2 Mini</h3>
+                    <hr class="my-2">
+                    <p class="card-text">Most affordable premium smartwatch by Amazfit</p>
+                    <p id="price" class="text-center bg-danger text-white p-1">7499 ৳</p> 
+                    <a href="#" class="btn btn-primary btn-block" id="add-to-list" data-id="5">Add to cart</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 p-3 bg-white">
+                    <img class="mb-2" style="height: 200px; width: 100%; display: block;" src="images/TREX_pro.jpg" alt="Card image">
+                    <hr class="my-2">
+                    <h3 class="card-subtitle mb-3 mt-2 text-muted">Amazfit T-Rex Pro</h3>
+                    <hr class="my-2">
+                    <p class="card-text">Best military grade smartwatch by Amazfit</p>
+                    <p id="price" class="text-center bg-danger text-white p-1">12999 ৳</p> 
+                    <a href="#" class="btn btn-primary btn-block" id="add-to-list" data-id="6">Add to cart</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 p-3 bg-white">
+                    <img class="mb-2" style="height: 200px; width: 100%; display: block;" src="images/Stratos_3.jpg" alt="Card image">
+                    <hr class="my-2">
+                    <h3 class="card-subtitle mb-3 mt-2 text-muted">Amazfit Stratos 3</h3>
+                    <hr class="my-2">
+                    <p class="card-text">Best sports grade smartwatch by Amazfit</p>
+                    <p id="price" class="text-center bg-danger text-white p-1">13999 ৳</p> 
+                    <a href="#" class="btn btn-primary btn-block" id="add-to-list" data-id="7">Add to cart</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 p-3 bg-white">
+                    <img class="mb-2" style="height: 200px; width: 100%; display: block;" src="images/GTR_3_pro.jpg" alt="Card image">
+                    <hr class="my-2">
+                    <h3 class="card-subtitle mb-3 mt-2 text-muted">Amazfit GTR 3 PRO</h3>
+                    <hr class="my-2">
+                    <p class="card-text">Flagship smartwatch with WiFi connection by Amazfit</p>
+                    <p id="price" class="text-center bg-danger text-white p-1">14999 ৳</p> 
+                    <a href="#" class="btn btn-primary btn-block" id="add-to-list" data-id="8">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
